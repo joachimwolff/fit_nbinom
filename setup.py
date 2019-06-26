@@ -3,12 +3,12 @@
 from setuptools import setup
 
 install_requires_py = ["numpy >= 1.15.*",
-                       "scipy >= 1.1.*"
+                       "scipy >= 1.2.*"
                        ]
 
 setup(
     name='fit_nbinom',
-    version=1.0,
+    version=1.1,
     author='Gökçen Eraslan, Joachim Wolff',
     author_email='wolffj@informatik.uni-freiburg.de',
     packages=['fit_nbinom'],
