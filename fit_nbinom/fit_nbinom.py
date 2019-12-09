@@ -38,8 +38,8 @@ def fit(X, initial_params=None):
         X = args[0]
         N = X.size
 
-        # MLE estimate based on the formula on Wikipedia:
-        # http://en.wikipedia.org/wiki/Negative_binomial_distribution#Maximum_likelihood_estimation
+        # MLE estimate based on the formula by Adamidis, 'An EM algorithm for estimating negative binomial parameters'
+        # Australian & New Zealand Journal of StatisticsVolume 41, Issue 2, 1999
         result = np.sum(gammaln(X + r)) \
             - np.sum(np.log(factorial(X))) \
             - N * (gammaln(r)) \
